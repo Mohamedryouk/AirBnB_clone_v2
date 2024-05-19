@@ -12,7 +12,9 @@ from fabric import local
 
 
 def do_pack():
-    """generates tgz"""
+    """
+    generates tgz
+    """
     try:
         date = datetime.now().strftime("%Y%m%d%H%M%S")
         if isdir("versions") is False:
